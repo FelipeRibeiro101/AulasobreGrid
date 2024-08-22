@@ -1,0 +1,50 @@
+/* PADRONIZACAO PARA TODOS OS ELEMENTOS*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: papyrus
+}
+
+/* PADROZINACAO DAS CORES POR VARIAVEIS */
+
+:root{
+    --azul: blue;
+    --vermelho: red;
+    --amarelo: yellow;
+}
+
+#vertical .container {
+    width: 400px;
+    height: 350px;
+    /* define no formato GRID*/
+    display: grid;
+    /* define o padrao de colunas - repetir (numCol,tam) */
+    grid-template-columns: repeat(3,33%);
+    /*  define o padrao de colunas - repetir (numlin,tam) */ 
+    grid-template-rows: repeat(1,350px);
+    /* define o espacamento entre colunas e linhas */
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
+
+.Item1 {
+    background-color: var(--amarelo);
+}
+
+.Item2 {
+    background-color: var(--azul);
+}
+
+.Item3 {
+    background-color: var(--vermelho);
+}
+
+#horizontal .container {
+    width: 600px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(1,350px);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
